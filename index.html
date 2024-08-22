@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Practico HTML</title>
+  </head>
+  <style>
+    body{
+      background-color: rgb(203, 224, 224);
+    }
+    table{
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>1. Estructura Básica del Documento HTML</h1>
+    </header>
+
+    <section class="content">
+      <p>
+        Este documento HTML tiene una estructura básica que incluye la
+        declaración DOCTYPE, etiquetas de metadato y título.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>2. Encabezados y Propiedades del Texto</h2>
+      <p><strong>Esto es un texto en negrita</strong></p>
+      <p><em>Esto es un texto en cursiva</em></p>
+      <p><u>Esto es un texto subrayado</u></p>
+    </section>
+
+    <section class="content">
+      <h2>3. Divisiones y Agrupación de Contenido</h2>
+      <article>
+        <h3>Sección 1</h3>
+        <p>
+          Contenido de la
+          <span style="color: rgb(255, 0, 102)">primera sección</span> agrupado
+          en un artículo.
+        </p>
+      </article>
+      <article>
+        <h3>Sección 2</h3>
+        <p>Contenido de la segunda sección agrupado en un artículo.</p>
+      </article>
+    </section>
+
+    <section class="content">
+      <h2>4. Enlaces y Listas</h2>
+      <p>Visita nuestro <a href="#">sitio web</a> para más información.</p>
+      <p>Enlaces Internos:</p>
+      <ol>
+        <li><a href="#estructura">Ir a Estructura</a></li>
+        <li><a href="#multimedia">Ir a Multimedia</a></li>
+        <li><a href="#formulario">Ir a Formulario</a></li>
+      </ol>
+      <p>Lista desordenada:</p>
+      <ul>
+        <li>Primer ítem de la lista desordenada</li>
+        <li>Segundo ítem de la lista desordenada</li>
+      </ul>
+      <p>Lista ordenada:</p>
+      <ol>
+        <li>Primer ítem de la lista ordenada</li>
+        <li>Segundo ítem de la lista ordenada</li>
+      </ol>
+    </section>
+
+    <h2>5. Elementos Multimedia</h2>
+
+    <section id="multimedia" class="content">
+      <figure>
+        <img src="/descarga.jfif" alt="stonks" />
+        <figcaption>Imagen de ejemplo</figcaption>
+      </figure>
+      <figure>
+        <video width="500" height="400" controls autoplay>
+          <source src="milei.3gp" type="video/3gpp" />
+          Tu navegador no soporta el formato de video.
+        </video>
+        <figcaption>Video de ejemplo</figcaption>
+      </figure>
+      <figure>
+        <audio controls autoplay>
+          <source src="unacalle.ogg" type="audio/ogg" />
+          Tu navegador no soporta el formato de audio.
+        </audio>
+        <figcaption>Audio de ejemplo</figcaption>
+      </figure>
+    </section>
+
+    <h2>6. Tabla</h2>
+    <section id="tabla">
+      <h2 style="text-align: center;">Tabla de Datos</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Ciudad</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Juan</td>
+                  <td>25</td>
+                  <td>Conurbano</td>
+              </tr>
+              <tr>
+                  <td>María</td>
+                  <td>30</td>
+                  <td>La Matanza</td>
+              </tr>
+              <tr>
+                  <td>Carlos</td>
+                  <td>22</td>
+                  <td>Caba</td>
+              </tr>
+              <tr>
+                  <td>Laura</td>
+                  <td>28</td>
+                  <td>San Telmo</td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
+
+    <section id="formulario" class="content">
+      <h2>7. Formulario</h2>
+      <div class="form-container">
+        <form method="post" action="/enviarform">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 Ejemplo de Footer</p>
+    </footer>
+  </body>
+</html>
